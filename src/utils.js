@@ -54,8 +54,8 @@ const error = prop => {
 const getMin = cols => {
   let min = cols[0];
 
-  for (let col of cols) {
-    if (col.height < min.height) min = col;
+  for (var i = 0; i < cols.length; i++) {
+    if (cols[i].height < min.height) min = cols[i];
   }
 
   return min;
