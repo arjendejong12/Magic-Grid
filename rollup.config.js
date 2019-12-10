@@ -16,7 +16,7 @@ export default [{
     commonjs(),
     buble({ // transpile ES2015+ to ES5
       exclude: ["node_modules/**"],
-      transforms: { forOf: false }
+      transforms: { dangerousForOf: true }
     }),
     uglify()
   ]
